@@ -1,0 +1,469 @@
+/* for navbar */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Suwannaphum&display=swap');
+
+
+body {
+  background-color: #f2f1ee;
+}
+
+.jumbotron {
+  background: none;
+}
+
+/* for home page */
+.centered {
+  text-align: center;
+  width: 70%;
+}
+
+.centered a {
+  margin-top: 50px;
+}
+
+.homecon {
+  padding-top: 100px;
+}
+
+/* for login admin and student */
+.card {
+  /* background-color: #E8ECEF; */
+  background: none;
+}
+
+.container h1 {
+  margin-left: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card label {
+  padding-right: 10px;
+}
+
+.card .form-control {
+  margin-right: 0;
+  width: 300px;
+}
+
+.card .form-group {
+  display: flex;
+}
+
+/* navbar styling */
+
+
+.top {
+  background: rgb(186, 215, 84);
+  background: linear-gradient(122deg, rgb(194, 224, 83) 17%, rgb(142, 152, 152) 31%);
+  font-family: 'Suwannaphum', serif;
+  font-size: 25px;
+  font-weight: 700;
+  height: 90px;
+  padding-left: 20px;
+}
+
+.top .logo {
+  padding-top: 5px;
+}
+
+nav {
+  padding-top: 10px;
+}
+
+header {
+  margin: 0;
+  padding: 0px 3%;
+  background-color: #4B4B4B;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 40px;
+}
+
+
+header li,
+a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav_link {
+  list-style: none;
+}
+
+.nav_link li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.nav_link li a {
+  transition: all 0.3s ease 0s;
+}
+
+/* For adding course and deprtment */
+.addcourse,
+.adddepartment,
+.addsemester,
+.studentdetail,
+.accountdetail {
+  text-align: center;
+  margin: 30px auto;
+  max-width: 700px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  background-color: #f2f7f7;
+}
+
+.addproject,
+.addpublication {
+  text-align: center;
+  margin: 30px auto;
+  max-width: 1000px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  background-color: #f2f7f7;
+}
+
+.addcourse button,
+.addsemester button,
+.adddepartment button {
+  width: 30%;
+  color: black;
+  background-color: #a4b3b6;
+  margin-left: 60px;
+}
+
+.addproject button,
+.addpublication button {
+  width: 50%;
+  color: black;
+  background-color: #a4b3b6;
+  margin-left: 60px;
+}
+
+.studentdetail button,
+.accountdetail button {
+  width: 40%;
+  color: black;
+  background-color: #a4b3b6;
+  margin-left: 60px;
+  margin-top: 6px;
+}
+
+#stdprofile {
+  width: 40%;
+  color: black;
+  background-color: #a4b3b6;
+  margin-left: 0px;
+}
+
+.form-group {
+  display: flex;
+}
+
+
+
+.form-control {
+  margin-right: 0;
+  width: 300px;
+}
+
+.addproject .form-control,
+.addpublication .form-control {
+  margin-right: 0;
+  width: 750px;
+}
+
+.addcourse label,
+.addsemester label,
+.adddepartment label,
+.studentdetail label,
+.addpublication label,
+.addproject label,
+.accountdetail label {
+  width: 200px;
+  display: block;
+  font-weight: 500;
+}
+
+.addcourse .heading,
+.addsemester .heading,
+.adddepartment .heading,
+.studentdetail .heading,
+.accountdetail .heading {
+  margin-bottom: 20px;
+  font-family: 'Noto Serif', serif;
+}
+
+h3 {
+  font-family: 'Noto Serif', serif;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.addproject .heading,
+.addpublication .heading {
+  margin-bottom: 40px;
+  font-family: 'Noto Serif', serif;
+}
+
+.addproject textarea,
+.addpublication textarea {
+  height: 200px;
+}
+
+.coursedept {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.departmentAvailable {
+  background-color: #f2f7f7;
+  width: 60%;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  margin-bottom: 400px;
+}
+
+.semesterAvailable,
+.coursesformark {
+  background-color: #f2f7f7;
+  width: 60%;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  margin-bottom: 400px;
+}
+
+.coursesformark h5 {
+  text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+  padding-top: 7px;
+}
+
+.coursesregistered {
+  background-color: #f2f7f7;
+  width: 70%;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  margin-bottom: 400px;
+}
+
+.list .remove {
+  justify-content: center;
+  display: flex;
+}
+
+.list button {
+  border-radius: 5px;
+  border: none;
+  width: 120px
+}
+
+.coursesformark button {
+  border-radius: 5px;
+  border: none;
+  background-color: #a4b3b6;
+  width: 120px;
+  margin: 4px 40%;
+}
+
+.coursesformark input {
+  border-radius: 5px;
+  border: none;
+}
+
+
+/* For registration and Profile */
+
+.regcontainer,
+.profilecontainer {
+  max-width: 700px;
+  width: 100%;
+  background-color: #f2f7f7;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  margin: 10px auto;
+}
+
+.regcontainer .title,
+.profilecontainer .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.regcontainer .content form .user-details,
+.profilecontainer .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+.regcontainer form .user-details .input-box,
+.profilecontainer .detail {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+.regcontainer form .input-box span.details,
+.profilecontainer span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.profilecontainer .detail {
+  display: flex;
+}
+
+.profilecontainer .showdetail {
+  margin-left: 3px;
+}
+
+.regcontainer .form-select {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.regcontainer .user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.regcontainer form input[type="radio"] {
+  display: none;
+}
+
+.regcontainer form .button {
+  height: 45px;
+  margin: 35px 0;
+  display: flex;
+
+}
+
+.regcontainer form .button input {
+  height: 100%;
+  width: 100%;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #a4b3b6;
+  text-align: center;
+}
+
+.regcontainer a {
+  height: 100%;
+  width: 50%;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  font-size: 18px;
+  padding-top: 7px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #a4b3b6;
+  text-align: center;
+  text-decoration: none;
+}
+
+.regcontainer form .button input:hover {
+  background: rgb(168, 165, 165);
+}
+
+
+/* Grade card */
+.gradecard {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.semester {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+  padding: 15px;
+}
+
+.gradecard .semester .detail {
+  text-align: center;
+  display: block;
+}
+
+.gradecard table {
+  margin-bottom: 15px;
+  width: 350px;
+  min-height: 250px;
+}
+
+
+.studentinfo .detail {
+  display: inline;
+  margin-left: 0;
+
+}
+
+.studentinfo .userdetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 150px 12px 150px;
+
+}
+
+.studentinfo .details {
+  font-weight: 500;
+  margin-left: 0;
+}
+
+.gradecard hr {
+  height: 2px;
+  border-width: 0;
+  color: gray;
+  background-color: gray
+}

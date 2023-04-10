@@ -1,0 +1,45 @@
+<%- include('partials/header') %>
+    <div class="addsemester">
+        <form action="/semester" method="post">
+            <div class="heading">
+                <h3>Add Semester</h3>
+            </div>
+            <div class="form-group ">
+                <label class="semesterlabel">Semester Name</label>
+                <input type="text" name="semestername" class="form-control " placeholder="Enter Semester Name" required>
+
+            </div>
+
+            <button type="submit" class="btn btn-secondary" name="addsemester">Add</button>
+        </form>
+    </div>
+    <div class="semesterAvailable">
+        <h3>Semesters</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Semester Name</th>
+                </tr>
+            </thead>
+            <tbody class="list">
+                <form action="/removesemester" method="post">
+                    <% for(var i=0;i<listitem.length;i++) { %>
+                        <tr>
+                            <th scope="row">
+                                <%= i+1%>
+                            </th>
+                            <td>
+                                <%= listitem[i].semestername %>
+                            </td>
+                            <td class="remove">
+                                <button type="submit" name="removesemester"
+                                    value="<%= listitem[i]._id %>">Remove</button>
+                            </td>
+                        </tr>
+                        <% } %>
+                </form>
+            </tbody>
+        </table>
+    </div>
+    <%- include('partials/footer') %>

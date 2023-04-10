@@ -1,0 +1,52 @@
+<%- include('partials/studentHeader') %>
+    <div class="profilecontainer">
+        <div class="title">My Profile</div>
+        <div class="user-details">
+
+            <div class="detail">
+                <span class="details">Full Name: </span>
+                <span class="showdetail">
+                    <%=student.name%>
+                </span>
+            </div>
+
+            <div class="detail">
+                <span class="details">Roll Number: </span>
+                <span class="showdetail">
+                    <%=student.rollno%>
+                </span>
+            </div>
+
+            <div class="detail">
+                <span class="details">Email: </span>
+                <span class="showdetail">
+                    <%=student.email%>
+                </span>
+            </div>
+
+            <div class="detail">
+                <span class="details">Phone Number: </span>
+                <span class="showdetail">
+                    <%=student.phoneno%>
+                </span>
+            </div>
+
+            <div class="detail">
+                <span class="details">Address: </span>
+                <span class="showdetail">
+                    <%=student.address%>
+                </span>
+            </div>
+
+            <div class="detail">
+                <span class="details">Date of Birth: </span>
+                <span class="showdetail">
+                    <%=student.dob.getDate()%>/
+                        <%=student.dob.getMonth()+1%>/
+                            <%=student.dob.getFullYear()%>
+                </span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <%- include('partials/footer') %>

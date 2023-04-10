@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+    <div class="studentdetail">
+        <form action="/studentdetail" method="post">
+            <div class="heading">
+                <h3>Find Student Details</h3>
+            </div>
+            <div class="form-group ">
+                <label class="studentlabel">Roll No.</label>
+                <input type="text" name="rollno" class="form-control " placeholder="Enter Roll No." required>
+
+            </div>
+            <button type="submit" class="btn btn-secondary" name="detail" value="Complete">Show Comleted
+                Courses</button>
+            <button type="submit" class="btn btn-secondary" name="detail" value="Backlog">Show Backlog Courses</button>
+            <button type="submit" class="btn btn-secondary" name="detail" value="marks">Enter Marks</button>
+            <button type="submit" class="btn btn-secondary" name="detail" value="gradecard">Print Gradecard</button>
+            <button type="submit" class="btn btn-secondary " id="stdprofile" name="detail" value="profile"
+                value="gradecard">Show
+                Student
+                Profile</button>
+        </form>
+    </div>
+
+    <%- include('partials/footer') %>

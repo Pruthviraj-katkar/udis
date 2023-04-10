@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+    <div class="accountdetail">
+        <form action="#" method="post">
+            <div class="heading">
+                <h3>Department Account Details</h3>
+            </div>
+            <div class="form-group ">
+                <label class="accountlabel">Enter Department Name</label>
+                <input type="text" name="rollno" class="form-control " placeholder="Enter Department Name" required>
+            </div>
+            <div class="form-group ">
+                <label class="accountlabel">Enter Ammount</label>
+                <input type="text" name="rollno" class="form-control " placeholder="Enter Ammount" required>
+            </div>
+            <div class="form-group ">
+                <label class="accountlabel">Enter Details</label>
+                <input type="text" name="rollno" class="form-control " placeholder="Enter Details" required>
+            </div>
+            <button type="submit" class="btn btn-secondary" name="detail">Add to Grant</button>
+            <button type="submit" class="btn btn-secondary" name="detail">Add to Spent</button>
+        </form>
+    </div>
+    <div class="adddepartment">
+        <form action="#" method="post">
+            <div class="heading">
+                <h3>Get Department Details</h3>
+            </div>
+            <div class="form-group ">
+                <label class="departmentlabel">Department Name</label>
+                <input type="text" name="departmentname" class="form-control " placeholder="Enter Department Name"
+                    required>
+
+            </div>
+
+            <button type="submit" class="btn btn-secondary" name="adddepartment">Find</button>
+        </form>
+    </div>
+    <%- include('partials/footer') %>

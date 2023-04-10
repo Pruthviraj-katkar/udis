@@ -1,0 +1,80 @@
+<%- include('partials/header') %>
+    <div class="regcontainer">
+        <div class="title">Registration</div>
+        <div class="content">
+
+            <form action="/registration" method="post">
+                <div class="user-details">
+
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" name="fullname" placeholder="Enter Name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Roll Number</span>
+                        <input type="text" name="Rollno" placeholder="Enter Roll No." required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" name="Email" placeholder="Enter Email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" name="Phone" placeholder="Enter Phone Number" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Address</span>
+                        <input type="text" name="Address" placeholder="Enter Address" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Date of Birth</span>
+                        <input type="date" name="year" placeholder="Enter Date of Birth" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Choose Course</span>
+                        <select class="form-select" name="Course" aria-label="Default select example">
+                            <option value="B.Tech">B.Tech</option>
+                            <option value="M.Tech">M.Tech</option>
+                            <option value="Phd">PhD</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Choose Department</span>
+                        <select class="form-control" name="department" aria-label="Default select example">
+                            <% for(var i=0;i<listdept.length;i++) { %>
+                                <option value="<%= listdept[i].departmentname %>">
+                                    <%= listdept[i].departmentname %>
+                                </option>
+                                <% } %>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="text" name="password" placeholder="Enter password" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Choose Gender</span>
+                        <select class="form-select" name="gender" aria-label="Default select example">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <input type="submit" name="info" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+    <%- include('partials/footer') %>

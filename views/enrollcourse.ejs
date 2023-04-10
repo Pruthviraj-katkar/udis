@@ -1,0 +1,39 @@
+<%- include('partials/studentHeader') %>
+    <div class="regcontainer">
+        <div class="title">Enroll</div>
+        <div class="content">
+
+            <form action="/enrollcourse" method="post">
+                <div class="user-details">
+
+                    <div class="input-box">
+                        <span class="details">Choose Semester</span>
+                        <select class="form-control" name="semester" aria-label="Default select example">
+                            <% for(var i=0;i<listsemester.length;i++) { %>
+                                <option value="<%= listsemester[i]._id %>">
+                                    <%= listsemester[i].semestername %>
+                                </option>
+                                <% } %>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Choose Course</span>
+                        <select class="form-control" name="course" aria-label="Default select example">
+                            <% for(var i=0;i<listcourse.length;i++) { %>
+                                <option value="<%= listcourse[i]._id %>">
+                                    <%= listcourse[i].coursename %>
+                                </option>
+                                <% } %>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="button">
+                    <input type="submit" name="info" value="Enroll">
+                </div>
+            </form>
+        </div>
+    </div>
+    <%- include('partials/footer') %>

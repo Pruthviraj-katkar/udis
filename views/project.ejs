@@ -1,0 +1,40 @@
+<%- include('partials/header') %>
+    <div class="addproject">
+        <form action="#" method="post">
+            <div class="heading">
+                <h3>Add Project Details</h3>
+            </div>
+            <div class="form-group ">
+                <label class="projectlabel">Project Name</label>
+                <input type="text" name="projectname" class="form-control " placeholder="Enter Project Name" required>
+
+            </div>
+            <div class="form-group ">
+                <label class="projectlabel">Project Details</label>
+                <textarea name="detail" class="form-control " placeholder="Enter Project Details ..."
+                    required></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary" name="addcourse">Add</button>
+        </form>
+    </div>
+    <div class="addpublication">
+        <form action="#" method="post">
+            <div class="heading">
+                <h3>Add Publication Details</h3>
+            </div>
+            <div class="form-group ">
+                <label class="publicationlabel">Publication Name</label>
+                <input type="text" name="coursename" class="form-control " placeholder="Enter Publication Name"
+                    required>
+
+            </div>
+            <div class="form-group ">
+                <label class="publicationlabel">Publication Details</label>
+                <textarea name="detail" class="form-control " placeholder="Enter Publication Details ..."
+                    required></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary" name="addcourse">Add</button>
+        </form>
+    </div>
+
+    <%- include('partials/footer') %>

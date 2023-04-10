@@ -1,0 +1,71 @@
+<%- include('partials/header') %>
+    <div class="addcourse">
+        <form action="/course" method="post">
+            <div class="heading">
+                <h3>Add Course</h3>
+            </div>
+            <div class="form-group ">
+                <label class="courselabel">Course Name</label>
+                <input type="text" name="coursename" class="form-control " placeholder="Enter Course Name" required>
+
+            </div>
+            <div class="form-group ">
+                <label class="courselabel">Course ID</label>
+                <input type="text" name="courseid" class="form-control " placeholder="Enter Course ID" required>
+            </div>
+            <div class="coursedept">
+                <label class="courselabel">Choose Department</label>
+                <select class="form-control" name="department" aria-label="Default select example">
+                    <option value="All">All</option>
+                    <% for(var i=0;i<listdept.length;i++) { %>
+                        <option value="<%= listdept[i].departmentname %>">
+                            <%= listdept[i].departmentname %>
+                        </option>
+                        <% } %>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-secondary" name="addcourse">Add</button>
+        </form>
+    </div>
+
+    <div class="coursesregistered">
+        <h3>Courses</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Course Name</th>
+                    <th scope="col">Course ID</th>
+                    <th scope="col">Department</th>
+                    <th scope="col"> Action</th>
+                </tr>
+            </thead>
+            <tbody class="list">
+                <form action="/removecourse" method="post">
+                    <% for(var i=0;i<listcourse.length;i++) { %>
+                        <tr>
+                            <th scope="row">
+                                <%= i+1%>
+                            </th>
+                            <td>
+                                <%=listcourse[i].coursename %>
+                            </td>
+                            <td>
+                                <%= listcourse[i].courseid %>
+                            </td>
+                            <td>
+                                <%= listcourse[i].coursedepartment %>
+                            </td>
+                            <td class="remove">
+                                <button type="submit" name="removecourse"
+                                    value="<%= listcourse[i]._id %>">Remove</button>
+                            </td>
+                        </tr>
+                        <% } %>
+                </form>
+            </tbody>
+        </table>
+    </div>
+
+    <%- include('partials/footer') %>
